@@ -6,7 +6,9 @@ export interface Props {
 }
 
 const { currentLang } = Astro.props;
-const targetLangUrl = currentLang === 'en' ? '/fa/' : '/en/';
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
+const targetLangUrl = currentLang === 'en' ? `${base}fa/` : `${base}en/`;
 const targetLangLabel = currentLang === 'en' ? 'فارسی' : 'English';
 ---
 

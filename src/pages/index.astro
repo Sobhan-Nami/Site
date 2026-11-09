@@ -1,19 +1,23 @@
 ---
 // Root page: redirect to default locale (/fa/ or /en/)
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
+const faUrl = `${base}fa/`;
+const enUrl = `${base}en/`;
 ---
 <!doctype html>
 <html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0;url=/fa/" />
+    <meta http-equiv="refresh" content={`0;url=${faUrl}`} />
     <title>سبحان نامی | Sobhan Nami</title>
-    <script is:inline>
+    <script is:inline define:vars={{ faUrl, enUrl }}>
       // Default to Persian (/fa/), unless user specifically has English preference
       const preferredLang = navigator.language || navigator.userLanguage || '';
       if (preferredLang.startsWith('en')) {
-        window.location.replace('/en/');
+        window.location.replace(enUrl);
       } else {
-        window.location.replace('/fa/');
+        window.location.replace(faUrl);
       }
     </script>
   </head>
@@ -22,8 +26,8 @@
       <h1 class="text-2xl font-bold mb-2">سبحان نامی</h1>
       <p class="text-[#78716c] mb-4">در حال هدایت...</p>
       <div class="flex gap-4 justify-center text-xs">
-        <a href="/fa/" class="px-4 py-2 bg-[#1c1917] text-white rounded-lg">فارسی</a>
-        <a href="/en/" class="px-4 py-2 border border-[#d6cfc7] text-[#44403c] rounded-lg">English</a>
+        <a href={faUrl} class="px-4 py-2 bg-[#1c1917] text-white rounded-lg">فارسی</a>
+        <a href={enUrl} class="px-4 py-2 border border-[#d6cfc7] text-[#44403c] rounded-lg">English</a>
       </div>
     </div>
   </body>

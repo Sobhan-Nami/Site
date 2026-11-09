@@ -4,7 +4,8 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://sobhannami.com',
+  site: 'https://sobhan-nami.github.io',
+  base: '/Site',
   output: 'static',
   i18n: {
     defaultLocale: 'fa',

@@ -4,6 +4,8 @@ import { siteConfig } from '../../data/siteConfig';
 
 const lang = 'fa';
 const data = siteConfig.fa;
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
 ---
 
 <BaseLayout
@@ -36,7 +38,7 @@ const data = siteConfig.fa;
         <a href="#platforms" class="px-4 py-2 rounded-lg border border-[#d6cfc7] text-[#44403c] hover:border-[#a8a29e] hover:text-[#1c1917] transition-colors">
           مشاهده پلتفرم‌ها
         </a>
-        <a href="/en/" aria-label="Switch language to English" title="English" class="ms-auto p-1.5 rounded-lg border border-[#d6cfc7] bg-white text-[#57534e] hover:text-[#1c1917] hover:border-[#a8a29e] transition-colors inline-flex items-center justify-center">
+        <a href={`${base}en/`} aria-label="Switch language to English" title="English" class="ms-auto p-1.5 rounded-lg border border-[#d6cfc7] bg-white text-[#57534e] hover:text-[#1c1917] hover:border-[#a8a29e] transition-colors inline-flex items-center justify-center">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 21a9 9 0 100-18 9 9 0 000 18zM3.6 9h16.8M3.6 15h16.8M12 3a14.3 14.3 0 013.6 9 14.3 14.3 0 01-3.6 9 14.3 14.3 0 01-3.6-9A14.3 14.3 0 0112 3z"/>
           </svg>

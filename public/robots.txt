@@ -23,4 +23,4 @@ User-agent: Applebot
 Allow: /
 
 # Sitemaps
-Sitemap: https://sobhannami.com/sitemap-index.xml
+Sitemap: https://sobhan-nami.github.io/Site/sitemap-index.xml
