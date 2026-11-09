@@ -1,0 +1,26 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  description: string;
+  lang: 'en' | 'fa';
+}
+
+const { title, description, lang } = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang} dir={lang === 'fa' ? 'rtl' : 'ltr'}>
+  <head>
+    <BaseHead title={title} description={description} lang={lang} />
+  </head>
+  <body class="min-h-screen flex flex-col bg-[#faf8f5] text-[#1c1917] antialiased">
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer currentLang={lang} />
+  </body>
+</html>

@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@import "@fontsource/vazirmatn/400.css";
+@import "@fontsource/vazirmatn/500.css";
+@import "@fontsource/vazirmatn/600.css";
+@import "@fontsource/vazirmatn/700.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+
+@layer base {
+  :root {
+    --font-en: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-fa: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    background-color: #faf8f5;
+    color: #1c1917;
+  }
+
+  html[lang="fa"] {
+    font-family: var(--font-fa);
+    direction: rtl;
+    line-height: 1.85;
+  }
+
+  html[lang="en"] {
+    font-family: var(--font-en);
+    direction: ltr;
+    line-height: 1.65;
+  }
+
+  code, pre, .code-ltr, [dir="ltr"] {
+    direction: ltr !important;
+    text-align: left !important;
+  }
+}
+
+/* Editorial styling accents */
+.editorial-card {
+  background: #ffffff;
+  border: 1px solid #ece7e1;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.editorial-card:hover {
+  border-color: #d6cfc7;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(28, 25, 23, 0.03);
+}
+
+.editorial-link {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: #a8a29e;
+  transition: text-decoration-color 0.2s ease, color 0.2s ease;
+}
+
+.editorial-link:hover {
+  text-decoration-color: #1c1917;
+  color: #0c0a09;
+}

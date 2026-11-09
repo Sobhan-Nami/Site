@@ -1,0 +1,164 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { siteConfig } from '../../data/siteConfig';
+
+const lang = 'fa';
+const data = siteConfig.fa;
+---
+
+<BaseLayout
+  title={`${data.name} | ${data.role}`}
+  description={`${data.name} — ${data.role} در شرکت رونیکا. معمار پلتفرم‌های ThingsPod و Dahir. مشاوره و منتورشیپ مهندسی نرم‌افزار.`}
+  lang={lang}
+>
+  <div class="max-w-3xl mx-auto px-5 sm:px-8 py-12 sm:py-16 space-y-16">
+
+    <!-- 1. Hero / Introduction -->
+    <section class="space-y-4">
+      <div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-[#1c1917] tracking-tight leading-relaxed">
+          {data.name}
+        </h1>
+        <p class="text-sm sm:text-base text-[#78716c] font-normal mt-1">
+          هم‌بنیان‌گذار و CTO در رونیکا
+        </p>
+      </div>
+
+      <p class="text-base sm:text-lg text-[#44403c] leading-relaxed">
+        {data.intro}
+      </p>
+
+      <div class="pt-2 flex flex-wrap items-center gap-4 text-xs font-semibold">
+        <a href="#consulting" class="px-4 py-2 rounded-lg bg-[#1c1917] text-white hover:bg-[#292524] transition-colors inline-flex items-center gap-1.5">
+          <span>مشاوره و منتورشیپ</span>
+          <span>↓</span>
+        </a>
+        <a href="#platforms" class="px-4 py-2 rounded-lg border border-[#d6cfc7] text-[#44403c] hover:border-[#a8a29e] hover:text-[#1c1917] transition-colors">
+          مشاهده پلتفرم‌ها
+        </a>
+        <a href="/en/" aria-label="Switch language to English" title="English" class="ms-auto p-1.5 rounded-lg border border-[#d6cfc7] bg-white text-[#57534e] hover:text-[#1c1917] hover:border-[#a8a29e] transition-colors inline-flex items-center justify-center">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 21a9 9 0 100-18 9 9 0 000 18zM3.6 9h16.8M3.6 15h16.8M12 3a14.3 14.3 0 013.6 9 14.3 14.3 0 01-3.6 9 14.3 14.3 0 01-3.6-9A14.3 14.3 0 0112 3z"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- 2. Advisory & Mentorship (Social Responsibility) -->
+    <section id="consulting" class="space-y-6 pt-6 border-t border-[#ece7e1]">
+      <div class="space-y-2">
+        <div>
+          <h2 class="text-xl font-bold text-[#1c1917] tracking-tight">
+            {data.consultingTitle}
+          </h2>
+          <p class="text-xs text-[#78716c] mt-0.5">
+            مسئولیت اجتماعی • بدون دریافت هزینه
+          </p>
+        </div>
+
+        <p class="text-xs sm:text-sm text-[#57534e] leading-relaxed">
+          {data.consultingPledge}
+        </p>
+      </div>
+
+      <!-- The 3 Clean Audience Pillars -->
+      <div class="space-y-3">
+        {data.consultingPillars.map((pillar) => (
+          <div class="p-5 rounded-xl border border-[#ece7e1] bg-white">
+            <h3 class="font-bold text-sm text-[#1c1917] mb-0.5">
+              {pillar.title}
+            </h3>
+            <div class="text-[11px] text-[#78716c] mb-2 font-medium">
+              {pillar.audience}
+            </div>
+            <p class="text-xs sm:text-sm text-[#57534e] leading-relaxed">
+              {pillar.description}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- 3. Direct Channels (Get in Touch) -->
+    <section id="contact" class="space-y-4 pt-6 border-t border-[#ece7e1]">
+      <div>
+        <h2 class="text-xl font-bold text-[#1c1917] tracking-tight">
+          {data.contactTitle}
+        </h2>
+        <p class="text-xs text-[#78716c] mt-1">
+          {data.contactSubtitle}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <!-- Telegram -->
+        <a
+          href={siteConfig.telegram}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="editorial-card p-4 rounded-xl flex items-center justify-between text-start group"
+        >
+          <span class="font-bold text-sm text-[#1c1917] group-hover:text-blue-700 transition-colors">تلگرام</span>
+          <span class="text-xs text-[#a8a29e] group-hover:text-blue-700 transition-colors">↖</span>
+        </a>
+
+        <!-- Email -->
+        <a
+          href={`mailto:${siteConfig.email}`}
+          class="editorial-card p-4 rounded-xl flex items-center justify-between text-start group"
+        >
+          <span class="font-bold text-sm text-[#1c1917] group-hover:text-blue-700 transition-colors">ایمیل</span>
+          <span class="text-xs text-[#a8a29e] group-hover:text-blue-700 transition-colors">↖</span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a
+          href={siteConfig.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="editorial-card p-4 rounded-xl flex items-center justify-between text-start group"
+        >
+          <span class="font-bold text-sm text-[#1c1917] group-hover:text-blue-700 transition-colors">لینکدین</span>
+          <span class="text-xs text-[#a8a29e] group-hover:text-blue-700 transition-colors">↖</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 4. Platforms & Systems (Ronika, Dahir, ThingsPod) -->
+    <section id="platforms" class="space-y-6 pt-6 border-t border-[#ece7e1]">
+      <div>
+        <h2 class="text-xl font-bold text-[#1c1917] tracking-tight">
+          {data.platformsTitle}
+        </h2>
+        <p class="text-xs text-[#78716c] mt-1">
+          {data.platformsSubtitle}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-4">
+        {data.platforms.map((platform) => (
+          <a
+            href={platform.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="editorial-card group block p-5 rounded-xl text-start"
+          >
+            <div class="flex items-baseline justify-between gap-2 mb-1.5">
+              <span class="font-bold text-base text-[#1c1917] group-hover:text-blue-700 transition-colors inline-flex items-center gap-1">
+                <span>{platform.name}</span>
+                <span class="text-xs text-[#a8a29e] group-hover:text-blue-700 transition-colors">↖</span>
+              </span>
+              <span class="text-xs text-[#78716c] font-normal">
+                {platform.role}
+              </span>
+            </div>
+            <p class="text-xs sm:text-sm text-[#57534e] leading-relaxed">
+              {platform.description}
+            </p>
+          </a>
+        ))}
+      </div>
+    </section>
+
+  </div>
+</BaseLayout>

@@ -1,0 +1,28 @@
+# Sobhan Nami — Professional Profile & Advisory
+
+> Sobhan Nami is a software engineer, architect, and technology leader. He serves as Co-founder & Chief Technology Officer (CTO) at Ronika and Software Architect for ThingsPod (industrial IoT platform) and Dahir (smart aquaculture platform). He holds a Top Rank Master of Science degree in Secure Computing from Shiraz University and is an IEEE author on IoT routing security.
+
+## Core Identity
+- **Name:** Sobhan Nami (سبحان نامی)
+- **Role:** Co-founder & Chief Technology Officer (CTO)
+- **Company:** Ronika (Ertebat Sanat Ronika Pars)
+- **Specialization:** Distributed Systems, Software Architecture, Industrial Internet of Things (IoT), Edge Computing, Secure Computing.
+- **Academic Honors:** Top Rank Graduate M.Sc. in Secure Computing (Shiraz University), Top Rank Graduate B.Sc. in Software Engineering (Persian Gulf University).
+- **Publication:** "Improving the Routing Protocol in the Internet of Things by Rule Extraction on Simulation Data", IEEE Xplore.
+
+## Architected Platforms
+- **ThingsPod (https://thingspod.io):** Industrial IoT platform for high-frequency telemetry, edge data processing, and large-scale device management.
+- **Dahir (https://dahir.io):** Smart aquaculture automation platform utilizing acoustic feeding controllers and water-quality telemetry for marine farming.
+- **Ronika (https://ronikapars.com):** Connected hardware, smart energy utilities, and industrial IoT solutions.
+
+## Free Community Advisory & Mentorship (Social Responsibility)
+Sobhan Nami provides 100% free, pro bono advisory sessions:
+1. **For Local Shops & Small Businesses:** Practical guidance on launching an online presence or e-commerce shop without overpaying.
+2. **For Students & Aspiring Engineers:** Career roadmaps, portfolio reviews, and software craftsmanship coaching.
+3. **For Startups & Technical Teams:** Sounding board reviews for system architecture, database selection, and distributed backend scaling.
+
+## Direct Channels
+- **Email:** sobhan.nami76@gmail.com
+- **Telegram:** https://t.me/SobhanNami76
+- **LinkedIn:** https://www.linkedin.com/in/sobhan-nami/
+- **Website:** https://sobhannami.com (bilingual English / Persian single-page hub)

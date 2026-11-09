@@ -1,0 +1,30 @@
+---
+import { siteConfig } from '../data/siteConfig';
+
+export interface Props {
+  currentLang: 'en' | 'fa';
+}
+
+const { currentLang } = Astro.props;
+const targetLangUrl = currentLang === 'en' ? '/fa/' : '/en/';
+const targetLangLabel = currentLang === 'en' ? 'فارسی' : 'English';
+---
+
+<footer class="border-t border-[#ece7e1] py-10 mt-16 text-xs text-[#78716c]">
+  <div class="max-w-3xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <a href={`mailto:${siteConfig.email}`} class="font-mono text-xs text-[#57534e] hover:text-[#1c1917] editorial-link transition-colors">
+      {siteConfig.email}
+    </a>
+    <div class="flex items-center gap-4">
+      <a href={siteConfig.telegram} target="_blank" rel="noopener noreferrer" class="editorial-link">Telegram</a>
+      <span>•</span>
+      <a href={siteConfig.linkedin} target="_blank" rel="noopener noreferrer" class="editorial-link">LinkedIn</a>
+      <span>•</span>
+      <a href={targetLangUrl} class="editorial-link inline-flex items-center text-[#57534e] hover:text-[#1c1917] transition-colors" aria-label={targetLangLabel} title={targetLangLabel}>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 21a9 9 0 100-18 9 9 0 000 18zM3.6 9h16.8M3.6 15h16.8M12 3a14.3 14.3 0 013.6 9 14.3 14.3 0 01-3.6 9 14.3 14.3 0 01-3.6-9A14.3 14.3 0 0112 3z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,21 @@
+# Build output & dependencies
+node_modules/
+dist/
+.astro/
+
+# Environment and logs
+.env
+.env.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Resumes (kept private as requested)
+*.pdf
