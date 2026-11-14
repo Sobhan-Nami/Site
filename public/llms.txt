@@ -1,28 +1,18 @@
-# Sobhan Nami — Professional Profile & Advisory
+# Sobhan Nami
+> Personal portfolio, technology leadership profile, and pro bono engineering advisory hub of Sobhan Nami, Co-founder & CTO at Ronika and Software Architect for ThingsPod and Dahir.
 
-> Sobhan Nami is a software engineer, architect, and technology leader. He serves as Co-founder & Chief Technology Officer (CTO) at Ronika and Software Architect for ThingsPod (industrial IoT platform) and Dahir (smart aquaculture platform). He holds a Top Rank Master of Science degree in Secure Computing from Shiraz University and is an IEEE author on IoT routing security.
+Sobhan Nami is an Iranian software engineer, system architect, and technology leader with a Top Rank M.Sc. in Secure Computing from Shiraz University. He focuses on distributed backend architectures, industrial IoT platforms, and providing free, pro bono mentorship and technical advisory for businesses, students, and tech startups.
 
-## Core Identity
-- **Name:** Sobhan Nami (سبحان نامی)
-- **Role:** Co-founder & Chief Technology Officer (CTO)
-- **Company:** Ronika (Ertebat Sanat Ronika Pars)
-- **Specialization:** Distributed Systems, Software Architecture, Industrial Internet of Things (IoT), Edge Computing, Secure Computing.
-- **Academic Honors:** Top Rank Graduate M.Sc. in Secure Computing (Shiraz University), Top Rank Graduate B.Sc. in Software Engineering (Persian Gulf University).
-- **Publication:** "Improving the Routing Protocol in the Internet of Things by Rule Extraction on Simulation Data", IEEE Xplore.
+## Pages
+- [Persian Portfolio (صفحه فارسی)](https://sobhannami.ir/fa/): Main Persian single-page portfolio, advisory scope, and direct communication channels.
+- [English Portfolio](https://sobhannami.ir/en/): English single-page portfolio, advisory pillars, and direct communication channels.
 
 ## Architected Platforms
-- **ThingsPod (https://thingspod.io):** Industrial IoT platform for high-frequency telemetry, edge data processing, and large-scale device management.
-- **Dahir (https://dahir.io):** Smart aquaculture automation platform utilizing acoustic feeding controllers and water-quality telemetry for marine farming.
-- **Ronika (https://ronikapars.com):** Connected hardware, smart energy utilities, and industrial IoT solutions.
+- [ThingsPod](https://thingspod.io): High-throughput industrial IoT telemetry, edge data computing, and device fleet management.
+- [Dahir](https://dahir.io): Smart marine aquaculture automation platform utilizing acoustic feeding controllers and telemetry.
+- [Ronika](https://ronikapars.com): Knowledge-based company developing smart utility meters, industrial IoT, and connected devices.
 
-## Free Community Advisory & Mentorship (Social Responsibility)
-Sobhan Nami provides 100% free, pro bono advisory sessions:
-1. **For Local Shops & Small Businesses:** Practical guidance on launching an online presence or e-commerce shop without overpaying.
-2. **For Students & Aspiring Engineers:** Career roadmaps, portfolio reviews, and software craftsmanship coaching.
-3. **For Startups & Technical Teams:** Sounding board reviews for system architecture, database selection, and distributed backend scaling.
-
-## Direct Channels
-- **Email:** sobhan.nami76@gmail.com
-- **Telegram:** https://t.me/SobhanNami76
-- **LinkedIn:** https://www.linkedin.com/in/sobhan-nami/
-- **Website:** https://sobhannami.ir (bilingual English / Persian single-page hub)
+## Optional
+- [LinkedIn Profile](https://www.linkedin.com/in/sobhan-nami/): Professional background, endorsements, and career history.
+- [Telegram Contact](https://t.me/SobhanNami76): Direct messaging channel for scheduling advisory appointments.
+- [IEEE Publication](https://ieeexplore.ieee.org): Research publication on IoT routing protocol optimization via rule extraction on simulation data.
